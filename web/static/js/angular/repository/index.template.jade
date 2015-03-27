@@ -1,0 +1,25 @@
+#container
+  .logo DO OPENSOURCE
+  #search
+    label
+      ='Поиск'
+    input
+    a.go
+      ='GO!'
+  #result
+    #item(ng-repeat="repository in vm.repositories")
+      .box
+        h4.title
+          {{repository.name}}
+        p.description
+          {{repository.description}}
+      .box.stars
+        span
+          {{repository.stars_count}}
+        p
+          = 'stars'
+      .box.forks
+        span
+          {{repository.forks_count}}
+        p
+          = 'forks'
