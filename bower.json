@@ -1,0 +1,25 @@
+{
+  "name": "opensource_do",
+  "version": "0.0.1",
+  "homepage": "https://github.com/markevich/opensource_do",
+  "main": "priv/static/js/app.js",
+  "dependencies": {
+    "console-polyfill": "latest",
+    "angular": "latest",
+    "angular-sanitize": "latest",
+    "angular-resource": "latest",
+    "angular-cookies": "latest",
+    "angular-route": "latest",
+    "angular-named-routes": "latest",
+    "angular-scroll": "~0.6.5"
+  },
+  "authors": [
+    "markevich"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}

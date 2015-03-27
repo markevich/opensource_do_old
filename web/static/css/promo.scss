@@ -1,0 +1,80 @@
+$darkbluecolor: #243a4d;
+$redcolor: #db5652;
+$yellowcolor: #edb169;
+$greencolor: #48a593;
+
+#intro{
+  height: 850px;
+  background-color: $darkbluecolor;
+}
+#section{
+  height: 650px;
+  background-color: $greencolor;
+}
+#slider{
+  height: 650px;
+  background-color: $redcolor;
+}
+#footer{
+  height: 650px;
+  background-color: $yellowcolor;
+}
+
+header{
+  background-color: white;
+  color: rgb(86, 86, 86);
+  font-family: HelveticaNeueThin;
+  font-size: 26px;
+  //padding: 20px 20px 20px 40px;
+  height: 45px;
+  opacity: 0.95;
+  position: fixed;
+  width: 100%;
+
+  .logo{
+    float: left;
+    padding: 10px;
+  }
+  nav{
+    float: right;
+    padding-right: 5px;
+
+    a{
+      padding: 10px;
+      display: inline-block;
+      margin-right: 2px;
+      font-size: 22px;
+      text-decoration: none;
+      cursor: pointer;
+      color: rgb(86, 86, 86);
+    }
+    a:first-child{
+      border-top:  3px solid $darkbluecolor;
+      &:hover, &.active{
+        background-color: $darkbluecolor;
+        color: white;
+      }
+      +a{
+        border-top:  3px solid $yellowcolor;
+        &:hover, &.active{
+          background-color: $yellowcolor;
+          color: white;
+        }
+        +a{
+          border-top:  3px solid $redcolor;
+          &:hover, &.active{
+            color: white;
+            background-color: $redcolor;
+          }
+          +a{
+            border-top:  3px solid $greencolor;
+            &:hover, &.active{
+              background-color: $greencolor;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
